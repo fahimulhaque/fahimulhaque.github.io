@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Work in Progress</title>
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="4;url=https://fahimulhaque.org">
+  
   <style>
     body {
       background-color: #f0f0f0;
@@ -22,7 +24,7 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem; /* Adjusted slightly */
       margin-bottom: 20px;
       color: #333;
     }
@@ -30,10 +32,10 @@
     .loader {
       width: 80px;
       height: 80px;
-      border: 10px solid #f3f3f3; /* Light grey */
-      border-top: 10px solid #3498db; /* Blue */
+      border: 10px solid #f3f3f3;
+      border-top: 10px solid #3498db;
       border-radius: 50%;
-      animation: spin 2s linear infinite;
+      animation: spin 1s linear infinite; /* Faster spin for urgency */
       margin: auto;
     }
 
@@ -46,13 +48,26 @@
       margin-top: 20px;
       color: #666;
     }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Work in Progress</h1>
+    <h1>Redirecting</h1>
     <div class="loader"></div>
-    <p>working hard to bring you an amazing experience.</p>
+    <p>We're moving you to <strong>fahimulhaque.org</strong>.</p>
+    <p><small>Not redirecting? <a href="https://fahimulhaque.org">Click here</a>.</small></p>
   </div>
+
+  <script>
+    // Redirect after 3 seconds
+    setTimeout(function() {
+      window.location.href = "https://fahimulhaque.org";
+    }, 3000);
+  </script>
 </body>
 </html>
